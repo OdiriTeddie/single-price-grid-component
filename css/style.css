@@ -1,0 +1,157 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styles */
+
+html, body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: .5rem;
+    line-height: 1.3;
+}
+
+p{
+   margin: .2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utility Styles */
+
+.btn {
+    display: inline-block;
+    background: hsl(71, 73%, 54%);
+    color: rgba(255, 255, 255, .75);
+    font-size: .75rem;
+    padding: .75em 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+
+
+/* Price Card */
+
+.price-card {
+    width: 90%;
+    max-width: 550px;
+   
+    background: #fff;
+    border-radius: 10px; 
+    
+}
+
+h2 {
+    font-size: .9rem;
+}
+
+p {
+    font-size: .75rem;
+    
+}
+
+
+/* Price Intro */
+
+.price-intro {
+  padding: 2rem;
+}
+
+.price-intro h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.free-trial {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.price-intro p {
+    color: hsl(218, 22%, 67%)
+}
+
+
+/* Why Us  */
+
+
+.price-quote-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.monthly-price {
+    background: hsl(179, 62%, 43%);
+    padding: 2rem;
+    color: #fff;
+    border-bottom-left-radius : 10px;
+    width: 50%;
+}
+
+.monthly-price span {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: .3em;
+}
+
+.monthly-price .price {
+    color: rgba(255, 255, 255, .55);
+    
+}
+
+.why-us {
+  color: #fff;
+   text-align: left;
+   width: 50%;
+   padding: 2rem;
+   border-bottom-right-radius : 10px;
+   background: hsla(179, 62%, 43%, 0.76);
+}
+
+.why-us > p {
+    color: rgba(255, 255, 255, 0.61);
+}
+
+@media (max-width: 675px) {
+    .price-quote-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .why-us {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+    }
+
+    .monthly-price {
+        width: 100%;
+        border-radius: 0;
+    }
+}
